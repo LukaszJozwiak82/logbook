@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin',function(){
     return 'to jest strona admina';
 })->middleware(['auth','auth.admin']);
+
+Route::get('/manager',function(){
+    return 'to jest strona admina-managera';
+})->middleware(['auth','auth.manager']);
